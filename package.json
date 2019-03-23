@@ -1,0 +1,53 @@
+{
+  "name": "emoji-mart-vue-fast-test",
+  "version": "0.0.1",
+  "description": "Emoji mart vue test",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:serebrov/emoji-mart-vue-test.git"
+  },
+  "author": "Boris Serebrov",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/serebrov/emoji-mart-vue-test/issues"
+  },
+  "homepage": "https://github.com/serebrov/emoji-mart-vue-test",
+  "peerDependencies": {
+    "vue": "^2.0.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "@babel/runtime": "^7.3.4",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^24.1.0",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^0.28.0",
+    "emoji-mart-vue-fast": "^5.4.11",
+    "postcss-loader": "^3.0.0",
+    "prettier": "1.16.4",
+    "size-limit": "^0.11.4",
+    "url-loader": "^0.5.8",
+    "vue": "^2.5.18",
+    "vue-loader": "^15.6.4",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.18",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "dev": "webpack -w --config webpack.config.js",
+    "start": "npm run dev"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "last 3 version",
+    "IE >= 11",
+    "iOS >= 9"
+  ]
+}
