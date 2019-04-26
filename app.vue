@@ -3,6 +3,11 @@
     <div class="row">
       <h1>Emoji Mart Vue 🏬</h1>
     </div>
+    <div class="row">
+      <emoji emoji=":santa::skin-tone-3:" :size="32" />
+      <emoji emoji="santa" set="emojione" :size="32" />
+      <emoji :emoji="santaEmojiObject" :size="32" />
+    </div>
 
     <div class="row">
       <button @click="toggleVisible">Show / hide the picker</button>
@@ -169,6 +174,9 @@ export default {
       // `emoji` object
       let style = `background-position: ${emoji.getPosition()}; background-image: url(https://unpkg.com/emoji-datasource-emojione@4.0.4/img/emojione/sheets-256/64.png); width: 24px; height: 24px; display: inline-block; background-size: 5200%`;
       return `<div class='emoji' style="${style}"></div>`;
+    },
+    santaEmojiObject() {
+      return index.findEmoji(":santa:");
     }
   },
   methods: {
