@@ -1,6 +1,6 @@
 Standalone demo application for [emoji-mart-vue-fast](https://github.com/serebrov/emoji-mart-vue) component.
 
-Live version: https://serebrov.github.io/emoji-mart-vue-test/.
+Live version: https://serebrov.github.io/emoji-mart-vue-fast-min-app/.
 
 Build with `npm run build`.
 

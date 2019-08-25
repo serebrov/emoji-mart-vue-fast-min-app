@@ -59,7 +59,6 @@ var config = {
 
   mode: "development",
   devtool: "inline-source-map",
-  watch: true,
   devServer: {
     inline: true
   }

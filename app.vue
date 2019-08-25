@@ -5,14 +5,14 @@
     </div>
     <div class="row">
       <emoji :data="index" emoji=":santa::skin-tone-3:" :size="32" />
-      <emoji :data="index" emoji="santa" set="emojione" :size="32" />
+      <emoji :data="index" emoji="santa" set="messenger" :size="32" />
       <emoji :data="index" :emoji="santaEmojiObject" :size="32" />
     </div>
 
     <div class="row">
       <picker
         :data="index"
-        :set="activeSet"
+        :set="messenger"
         :native="native"
         :custom="custom"
         :emoji="emoji"
@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import data from "emoji-mart-vue-fast/data/all.json";
+import data from "emoji-mart-vue-fast/data/messenger.json";
 import { Picker, Emoji, EmojiIndex } from "emoji-mart-vue-fast";
 import "emoji-mart-vue-fast/css/emoji-mart.css";
 
