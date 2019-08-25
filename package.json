@@ -38,6 +38,7 @@
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "dev": "webpack -w --config webpack.config.js",
+    "stats": "webpack --profile --json > webpack.stats.json",
     "start": "npm run dev"
   },
   "postcss": {
