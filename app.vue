@@ -12,9 +12,8 @@
     <div class="row">
       <picker
         :data="index"
-        :set="messenger"
+        set="messenger"
         :native="native"
-        :custom="custom"
         :emoji="emoji"
         :emojiTooltip="true"
         :title="title"
