@@ -3,21 +3,9 @@
     <div class="row">
       <h1>Emoji Mart Vue Fast Minimal Demo App 🏬</h1>
     </div>
-    <div class="row">
-      <emoji :data="index" emoji=":santa::skin-tone-3:" :size="32" />
-      <emoji :data="index" emoji="santa" set="messenger" :size="32" />
-      <emoji :data="index" :emoji="santaEmojiObject" :size="32" />
-    </div>
 
     <div class="row">
-      <picker
-        :data="index"
-        set="messenger"
-        :native="native"
-        :emoji="emoji"
-        :emojiTooltip="true"
-        :title="title"
-      />
+      <picker :data="index" set="messenger" :native="false" />
     </div>
 
     <div class="row-small">
@@ -34,7 +22,7 @@
 
 <script>
 import data from "emoji-mart-vue-fast/data/messenger.json";
-import { Picker, Emoji, EmojiIndex } from "emoji-mart-vue-fast";
+import { Picker, EmojiIndex } from "emoji-mart-vue-fast";
 import "emoji-mart-vue-fast/css/emoji-mart.css";
 
 let index = new EmojiIndex(data);
@@ -42,50 +30,16 @@ let index = new EmojiIndex(data);
 export default {
   data() {
     return {
-      index: index,
-      activeSet: "native",
-      emoji: "point_up",
-      title: "Pick your emoji…"
+      index: index
     };
   },
-  computed: {
-    native() {
-      return this.activeSet == "native";
-    },
-    santaEmojiObject() {
-      return index.findEmoji(":santa:");
-    }
-  },
-  methods: {
-    toggleVisible() {
-      this.isVisible = !this.isVisible;
-    }
-  },
   components: {
-    Picker,
-    Emoji
+    Picker
   }
 };
 </script>
 
 <style scoped>
-button + button {
-  margin-left: 0.5em;
-}
-button {
-  padding: 0.4em 0.6em;
-  border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background: #fff;
-  outline: 0;
-  cursor: pointer;
-}
-
-button[disabled] {
-  border-color: #ae65c5;
-  cursor: default;
-}
-
 h1 {
   font-family: Courier;
 }
