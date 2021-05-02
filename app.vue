@@ -5,7 +5,7 @@
     </div>
 
     <div class="row">
-      <picker :data="index" set="messenger" :native="false" />
+      <picker :data="index" set="google" :native="false" />
     </div>
 
     <div class="row-small">
@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import data from "emoji-mart-vue-fast/data/messenger.json";
+import data from "emoji-mart-vue-fast/data/google.json";
 import { Picker, EmojiIndex } from "emoji-mart-vue-fast";
 import "emoji-mart-vue-fast/css/emoji-mart.css";
 
